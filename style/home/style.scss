@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     body{
         color: #ecf0f1;
         font-family: montserrat;
@@ -11,6 +12,25 @@
             height: 100vh;
             background-size: cover;
             background-image: url(/images/hero.jpg);
+        }
+
+        .slideshow-container{
+
+        }
+    }
+
+
+
+
+
+    @media only screen and (max-width: 600px) {
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: content-box;
+            body {
+
+            }
         }
     }
 }
