@@ -1,0 +1,23 @@
+.nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background-color: #07070A;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav h3 {
+  margin: 20px;
+  font-weight: 300;
+  border: solid 2px #ecf0f1;
+  padding: 2px;
+}
+
+.nav h3 a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
