@@ -1,14 +1,16 @@
 .nav{
+    top: 0;
     width: 100%;
     display: flex;
     position: absolute;
     background-color: #07070A;
     justify-content: space-around;
 
-    h3{margin: 20px;
+    h3{
+        padding: 2px;
+        margin: 20px;
         font-weight: 300;
         border: solid 2px #ecf0f1;
-        padding: 2px;
 
         a{
             color: #ecf0f1;

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     body{
         color: #ecf0f1;
         font-family: montserrat;
@@ -14,83 +15,72 @@
             background-image: url(/images/hero.jpg);
         }
 
-        .slideshow-container{
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
+        .heading{
+            padding-top: 2%;
+            color: #ecf0f1;
+            text-align: center  ;
+        }
+
+        .new_music_container{
+            width: 100%;
+            display: flex;
 
             .new_music{
+                width: 25%; 
+                padding: 2%;
+                
+
+                a{
+                    img{
+                        width: 95%;
+    
+                        &:hover{
+                        width: 100%;
+                        transition: 0.5s ease;
+                        }
+                    }
+                    
+                    .title{
+                        width: 100%;
+                        bottom: 8px;
+                        font-size: 15px;
+                        color: #f2f2f2;
+                        padding: 8px 12px;
+                        text-align: center;
+                        text-decoration: none;
+    
+                        &:hover{
+                            font-size: large;
+                            transition: 1s ease;
+                        }
+                    }
+                }
+            }
+        }
+
+        .genre_container{
+            width: 100%;
+            display: flex;
+
+            .genre{
+                width: 25%; 
+                padding: 2%;
+                
 
                 img{
                     width: 100%;
-                    // display: none;
+                    height: 70%;
                 }
                 
                 .title{
-                    color: #f2f2f2;
-                    font-size: 15px;
-                    padding: 8px 12px;
-                    position: absolute;
-                    bottom: 8px;
                     width: 100%;
+                    bottom: 8px;
+                    font-size: 15px;
+                    color: #f2f2f2;
+                    padding: 8px 12px;
                     text-align: center;
-                  }
-            }
-
-            /* Next & previous buttons */
-            .prev, .next{
-                cursor: pointer;
-                position: absolute;
-                top: 50%;
-                width: auto;
-                margin-top: -22px;
-                padding: 16px;
-                color: #ecf0f1;
-                font: bold;
-                font-size: 18px;
-                transition: 0.6s ease;
-                border-radius: 3px 0 0 3px;
-
-                &:hover{
-                background-color: rgba(0,0,0,0.8);
                 }
             }
-
-            /* Position the "next button" to the right */
-            .next{
-                right: 0;
-                border-radius: 3px 0 0 3px; 
-            }
-
-            .dot{
-                cursor: pointer;
-                height: 15px;
-                width: 15px;
-                margin: 0 2px;
-                background-color: #bbb;
-                border-radius: 50%;
-                display: inline-block;
-                transition: background-color 0.6s ease;
-
-                &:hover{
-                    background-color: #717171;
-                }
-            }
-
-          .active{
-            background-color: #717171;
-          }
-          
-          /* Fading animation */
-          .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-          }
-          
-          @keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
-          }
         }
     }
 }
