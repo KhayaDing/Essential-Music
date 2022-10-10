@@ -29,25 +29,38 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * body .new_music_container .new_music {
-  width: 25%;
+  width: 20%;
   padding: 2%;
 }
 
-* body .new_music_container .new_music a img {
-  width: 95%;
+* body .new_music_container .new_music:hover a img {
+  width: 90%;
+  -webkit-transition: ease-in-out 0.7s;
+  transition: ease-in-out 0.7s;
 }
 
-* body .new_music_container .new_music a img:hover {
-  width: 100%;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+* body .new_music_container .new_music:hover a .title {
+  font-size: large;
+  -webkit-transition: ease-in-out 0.7s;
+  transition: ease-in-out 0.7s;
+}
+
+* body .new_music_container .new_music a {
+  text-decoration: none;
+}
+
+* body .new_music_container .new_music a img {
+  width: 80%;
 }
 
 * body .new_music_container .new_music a .title {
-  width: 100%;
+  width: 80%;
   bottom: 8px;
   font-size: 15px;
   color: #f2f2f2;
@@ -56,10 +69,19 @@
   text-decoration: none;
 }
 
-* body .new_music_container .new_music a .title:hover {
-  font-size: large;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
+* body .latest_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body .latest_container .album {
+  width: 20%;
+  padding: 2%;
 }
 
 * body .genre_container {
@@ -67,24 +89,58 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * body .genre_container .genre {
-  width: 25%;
+  width: 20%;
   padding: 2%;
 }
 
-* body .genre_container .genre img {
-  width: 100%;
+* body .genre_container .genre:hover a img {
+  width: 90%;
+  -webkit-transition: ease-in-out 0.7s;
+  transition: ease-in-out 0.7s;
+}
+
+* body .genre_container .genre:hover a .title {
+  font-size: large;
+  -webkit-transition: ease-in-out 0.7s;
+  transition: ease-in-out 0.7s;
+}
+
+* body .genre_container .genre a {
+  text-decoration: none;
+}
+
+* body .genre_container .genre a img {
+  width: 80%;
   height: 70%;
 }
 
-* body .genre_container .genre .title {
-  width: 100%;
+* body .genre_container .genre a .title {
+  width: 80%;
   bottom: 8px;
   font-size: 15px;
   color: #f2f2f2;
   padding: 8px 12px;
   text-align: center;
+  text-decoration: none;
+}
+
+* body .top_artists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body .top_artists table {
+  border: solid 2px white;
+  border: c;
 }
 /*# sourceMappingURL=style.css.map */
